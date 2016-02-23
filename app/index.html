@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/webfont.css">
+    <link rel="stylesheet" href="styles/table.css">
+    <link rel="stylesheet" href="../bower_components/wow/css/libs/animate.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="untitledApp">
+  <div class="menubar" data-scroll="true">
+    <ul class="mainmenu">
+      <li class="active"><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <a class="scroll" id="home"></a>
+  <div class="home hero">
+    <div class="overlay"></div>
+    <div class="herowrapper">
+      <h1>Josh Oliver,</h1>
+      <h1><b class="rotate color">designer,developer,innovator</b>.</h1>
+    </div>
+    <a href="javascript:void(0);" class="scrolldown">
+      <h3>More about Josh Oliver</h3>
+    </a>
+  </div>
+  <div class="blockquote main wow bounceIn">
+    <blockquote>Programming is pragmatic creativity</blockquote>
+  </div>
+  <div class="content">
+    <div class="clear"></div>
+  </div>
+    <div class="clear"></div>
+  <div class="section divider">
+    <h2>About Josh Oliver</h2>
+    <a class="scroll" id="about"></a>
+  </div>
+  <div class="content">
+
+    <div class="person">
+        <img class="josh wow bounceInLeft" src="images/josh2.jpg">
+        <div class="quotehover">
+          <h5>“You have to do something you’ve never done
+            to have something you’ve never had.”</h5>
+          <h6>Elizabeth Franklin</h6>
+        </div>
+      <div class="info">
+        <h2>Josh Oliver</h2>
+        <h4 class="light-gray">Developer</h4>
+        <p>Dedicated and motivated junior developer with a passion and love for learning and using all technologies. Sufficient experience working in C#, Python, ASP.Net MVC, SQL, HTML, CSS, and JavaScript. Variable experience working in Node, Express, and Angular. Experience with group projects both as a leader and member. Genuine interest in business and constantly thinking of innovative ways to use software development to solve real world problems.</p>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+  <div class="section divider">
+    <h2 id="servicestitle">My Portfolio</h2>
+    <a class="scroll" id="portfolio"></a>
+  </div>
+
+  <ul class="portfoliofilter">
+    <li class="filter active" data-filter="design branding illustration">All</li>
+    <li class="filter" data-filter="design">.Net/JavaScript</li>
+    <li class="filter" data-filter="branding">Python</li>
+    <li class="filter" data-filter="illustration">Code Snippets</li>
+  </ul>
+
+  <div class="clear"></div>
+
+  <ul class="portfolio">
+    <li class="item design">
+      <div class="portfolioitem">
+        <img src="images/chart.PNG">
+        <div class="portfoliohover"scroll-to-item scroll-to="#swatch">
+          <a ng-click="page='project1'">
+          <div class="info">
+            <h1>+</h1>
+            <h5>Live Stock Data</h5>
+            <h6>JavaScipt<b class="light-gray"> / </b>HTML</h6>
+          </div>
+            </a>
+        </div>
+      </div>
+    </li>
+
+    <li class="item branding">
+      <div class="portfolioitem">
+        <img src="images/calc-tile.png">
+        <div class="portfoliohover" scroll-to-item scroll-to="#swatch">
+          <a ng-click="page='project4'">
+            <div class="info">
+              <h1>+</h1>
+              <h5>Android Calculator App</h5>
+              <h6>Python<b class="light-gray"> / </b>Android</h6>
+            </div>
+          </a>
+        </div>
+      </div>
+    </li>
+
+    <li class="item design">
+      <div class="portfolioitem">
+        <img src="images/goat_tile.png">
+        <div class="portfoliohover" scroll-to-item scroll-to="#swatch">
+          <a ng-click="page='project2'">
+          <div class="info">
+            <h1>+</h1>
+            <h5>HR Vacation Manager</h5>
+            <h6>.NET<b class="light-gray"> / </b>HTML</h6>
+          </div>
+            </a>
+        </div>
+      </div>
+    </li>
+
+    <li class="item branding">
+      <div class="portfolioitem">
+        <img src="images/nlp-tile.png">
+        <div class="portfoliohover" scroll-to-item scroll-to="#swatch">
+          <a ng-click="page='project5'">
+            <div class="info">
+              <h1>+</h1>
+              <h5>Natural Language Processing</h5>
+              <h6>Python<b class="light-gray"> / </b>MongoDB</h6>
+            </div>
+          </a>
+        </div>
+      </div>
+    </li>
+
+    <li class="item design">
+      <div class="portfolioitem">
+        <img src="images/otua-tile.png">
+        <div class="portfoliohover" scroll-to-item scroll-to="#swatch">
+          <a ng-click="page='project3'">
+          <div class="info">
+            <h1>+</h1>
+            <h5>Auto Repair Market Place</h5>
+            <h6>.Net<b class="light-gray"> / </b>MVC</h6>
+          </div>
+            </a>
+        </div>
+        </div>
+    </li>
+
+    <li class="item illustration">
+      <div class="portfolioitem">
+        <img src="images/math-tile.png">
+        <div class="portfoliohover" scroll-to-item scroll-to="#swatch">
+          <a ng-click="page='project6'">
+            <div class="info">
+              <h1>+</h1>
+              <h5>Math Methods</h5>
+              <h6>C#</h6>
+            </div>
+          </a>
+        </div>
+      </div>
+    </li>
+
+  </ul>
+  <br>
+  <div class="clear" style="padding-top: 75px" id="swatch"></div>
+  <div class="animate-switch-container portfolio-container" ng-switch on="page">
+    <div class="animate-switch" ng-switch-when="project1">
+      <div ng-include="'views/project1.html'"></div>
+    </div>
+    <div class="animate-switch" ng-switch-when="project2">
+      <div ng-include="'views/project2.html'"></div>
+    </div>
+    <div class="animate-switch" ng-switch-when="project3">
+      <div ng-include="'views/project3.html'"></div>
+    </div>
+    <div class="animate-switch" ng-switch-when="project4">
+      <div ng-include="'views/project4.html'"></div>
+    </div>
+    <div class="animate-switch" ng-switch-when="project5">
+      <div ng-include="'views/project5.html'"></div>
+    </div>
+    <div class="animate-switch" ng-switch-when="project6">
+      <div ng-include="'views/project6.html'"></div>
+    </div>
+    <div class="animate-switch" ng-switch-default>
+      <div ng-include="'views/project2.html'"></div>
+    </div>
+  </div>
+    <div class="clear"></div>
+
+  <div class="section divider">
+    <h2 id="servicestitle">Contact Me</h2>
+    <a class="scroll" id="contact"></a>
+  </div>
+  <div>
+    <div style="text-align: center">
+      <img src="images/emailicon.png" href="mailto:jolive1919@gmail.com" class="wow bounceInLeft">
+      <h2 class="wow bounceInRight">jolive1919@gmail.com</h2>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+  <footer class="footer">
+  </footer>
+
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/jquery.mixitup.min.js"></script>
+        <script src="scripts/jquery.jcarousel.min.js"></script>
+        <script src="scripts/custom.js"></script>
+        <script src="scripts/responsiveslides.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script><script>new WOW().init();</script>
+
+  <!-- endbuild -->
+</body>
+</html>
